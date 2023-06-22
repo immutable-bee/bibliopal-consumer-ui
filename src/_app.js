@@ -1,10 +1,7 @@
-import "../src/globals.scss";
-import Headercomponent from "./components/HeaderComponent";
 
-function MyApp({ }) {
+function MyApp({ Component, pageProps }) {
   return <>
-  <Headercomponent />
-    <h1>jjgdjgdgdyj</h1>
+    <Component {...pageProps} />
   </>
 }
 

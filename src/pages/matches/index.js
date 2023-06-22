@@ -5,6 +5,7 @@ import styles from './matches.module.scss';
 // import Link from 'next/link';
 import 'bootstrap/dist/css/bootstrap.css';
 import HeaderComponent from '@/components/HeaderComponent';
+import Head from "next/head"
 
 const Matches = () => {
     const [active, setActive] = useState('all');
@@ -284,6 +285,10 @@ const Matches = () => {
     console.log('active :::::::::::::::::::', active)
     return (
         <>
+            <Head >
+                <link rel="shortcut icon" href="/images/fav.png" />
+
+            </Head>
             <div className='match-tab'>
                 <HeaderComponent />
                 <Inputcomponent />

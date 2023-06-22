@@ -5,6 +5,8 @@ import styles from './home.module.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import Inputcomponent from '@/components/Inputcomponent';
 import HeaderComponent from '@/components/HeaderComponent';
+import Head from "next/head"
+
 // import ProfileComponent from '@/components/ProfileComponent';
 const Home = () => {
   var data = [
@@ -151,9 +153,13 @@ const Home = () => {
   ]
   return (
     <>
- <HeaderComponent />
-     <Inputcomponent />
-    
+      <Head >
+        <link rel="shortcut icon" href="/images/fav.png" />
+
+      </Head>
+      <HeaderComponent />
+      <Inputcomponent />
+
       <section className={styles.home_cards}>
         <div className='container-fluid'>
           <div className='row'>
